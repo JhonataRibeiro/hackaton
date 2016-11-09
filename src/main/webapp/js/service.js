@@ -10,9 +10,6 @@ App.factory('Tipo', function($http, API){
 		},
 		update: function(item, id){
 			return $http.put(API+'tipo/'+id, item);	
-		},
-		delete: function(id){
-			return $http.delete(API+'tipo/'+id);
 		}
 	}
 })

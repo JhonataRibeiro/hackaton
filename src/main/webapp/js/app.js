@@ -6,9 +6,10 @@ var App = angular.module('App', [
 
 App.config(function($routeProvider){
 	$routeProvider
+	
 	.when('/', {
-		templateUrl: 'views/read.html',
-		controller: 'ReadCtrl'
+		templateUrl: 'views/agente/agente.html',
+		controller: 'AgenteCtrl'
 	})
 
 	.when('/create', {

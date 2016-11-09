@@ -16,25 +16,27 @@ import com.stefanini.service.TipoService;
 
 @Path("/agente")
 @RequestScoped
-public class TipoController {
-
-	@GET
+public class AgenteController {
+	
+    @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Agente> get(){
-		List<Agente> agentes =  new ArrayList<Agente>();
-		Agente agente1 = new Agente();
+    public List<Agente> get() {
+List<Agente> listaAgentes = new ArrayList<Agente>();
+    	
+    	Agente agente1 = new Agente();
     	Agente agente2 = new Agente();
+    	
     	agente1.setIdAgente(1);
-    	agente1.setNome("Jhonata Ribeiro");
+    	agente1.setNome("Rafael");
     	
     	agente2.setIdAgente(2);
-    	agente2.setNome("Luciana Santos");
+    	agente2.setNome("Filype");
     	
-    	agentes.add(agente1);
-    	agentes.add(agente2);
+    	listaAgentes.add(agente1);
+    	listaAgentes.add(agente2);
     	
-    	return agentes;
-		
-	} 
-    	
+        return listaAgentes;
+      
+    }
+
 }
